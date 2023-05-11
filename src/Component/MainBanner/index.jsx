@@ -103,7 +103,7 @@ function MainBanner() {
           >
             <GitHubIcon
               component="a"
-              href="/https://github.com/gilangerlangga18"
+              href="https://github.com/gilangerlangga18"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
@@ -115,7 +115,7 @@ function MainBanner() {
             />
             <InstagramIcon
               component="a"
-              href="/https://www.instagram.com/gilangerlangga18/"
+              href="https://www.instagram.com/gilangerlangga18/"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
@@ -127,7 +127,7 @@ function MainBanner() {
             />
             <LinkedInIcon
               component="a"
-              href="/https://www.linkedin.com/in/gilang-erlangga-099aba239/"
+              href="https://www.linkedin.com/in/gilang-erlangga-099aba239/"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
@@ -139,7 +139,7 @@ function MainBanner() {
             />
             <EmailIcon
               component="a"
-              href="/https://github.com/gilangerlangga18"
+              href="https://github.com/gilangerlangga18"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
