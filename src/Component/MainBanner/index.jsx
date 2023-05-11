@@ -102,48 +102,63 @@ function MainBanner() {
             }}
           >
             <GitHubIcon
+              component="a"
+              href="/https://github.com/gilangerlangga18"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
                 borderRadius: "50%",
                 width: { xs: "20px", md: "25px" },
                 height: { xs: "20px", md: "25px" },
+                cursor: "pointer",
               }}
             />
             <InstagramIcon
+              component="a"
+              href="/https://www.instagram.com/gilangerlangga18/"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
                 borderRadius: "50%",
                 width: { xs: "20px", md: "25px" },
                 height: { xs: "20px", md: "25px" },
+                cursor: "pointer",
               }}
             />
             <LinkedInIcon
+              component="a"
+              href="/https://www.linkedin.com/in/gilang-erlangga-099aba239/"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
                 borderRadius: "50%",
                 width: { xs: "20px", md: "25px" },
                 height: { xs: "20px", md: "25px" },
+                cursor: "pointer",
               }}
             />
             <EmailIcon
+              component="a"
+              href="/https://github.com/gilangerlangga18"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
                 borderRadius: "50%",
                 width: { xs: "20px", md: "25px" },
                 height: { xs: "20px", md: "25px" },
+                cursor: "pointer",
               }}
             />
             <WhatsAppIcon
+              component="a"
+              href="/gilang.erlangga1806@gmail.com"
               sx={{
                 border: "1px black solid",
                 padding: { xs: "8px", md: "10px" },
                 borderRadius: "50%",
                 width: { xs: "20px", md: "25px" },
                 height: { xs: "20px", md: "25px" },
+                cursor: "pointer",
               }}
             />
           </Box>
