@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useContext } from "react";
+import React from "react";
 import BoxCarousel from "../Carousel";
 import Dummy from "../../DummyData/DataProject.json";
 
