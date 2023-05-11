@@ -101,7 +101,7 @@ function MainBanner() {
               margin: { xs: " 20px 0  20px 0" },
             }}
           >
-            <Box component="a" href="https://github.com/gilangerlangga18">
+            <Button component="a" href="https://github.com/gilangerlangga18">
               <GitHubIcon
                 sx={{
                   border: "1px black solid",
@@ -113,9 +113,9 @@ function MainBanner() {
                   color: "black",
                 }}
               />
-            </Box>
+            </Button>
 
-            <Box
+            <Button
               component="a"
               href="https://www.instagram.com/gilangerlangga18"
             >
@@ -130,9 +130,9 @@ function MainBanner() {
                   color: "black",
                 }}
               />
-            </Box>
+            </Button>
 
-            <Box
+            <Button
               component="a"
               href="https://www.linkedin.com/in/gilang-erlangga-099aba239/"
             >
@@ -147,9 +147,9 @@ function MainBanner() {
                   color: "black",
                 }}
               />
-            </Box>
+            </Button>
 
-            <Box component="a" href="https://wa.me/082269788667">
+            <Button component="a" href="https://wa.me/082269788667">
               <WhatsAppIcon
                 sx={{
                   border: "1px black solid",
@@ -161,7 +161,7 @@ function MainBanner() {
                   color: "black",
                 }}
               />
-            </Box>
+            </Button>
           </Box>
         </Box>
         <Box
