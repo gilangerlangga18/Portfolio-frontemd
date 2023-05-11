@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Todo List.",
+    "description": "Web to do list is a web that is used to determine a list of tasks that must be done, determine priorities that must be done",
+    "technology_used": "React Js, Material UI, html,css, FireBase",
+    "preview_image": [
+      "../../../image/todo/homeTodo.png",
+      "../../../image/todo/DeleteTodo.png",
+      "../../../image/todo/AlertTodo.png",
+      "../../../image/todo/NewActivity.png",
+      "../../../image/todo/NewActivity1.png",
+      "../../../image/todo/TambahNewActivity.png",
+      "../../../image/todo/ActivityTodo.png"
+    ]
+  },
+  {
+    "title": "GG Coffe & Resto.",
+    "description": "A web platform for ordering drinks online offers convenience and an easy-to-use interface. It allows customers to browse and order from a wide selection of drinks, with features such as customization topping",
+    "technology_used": " React Js, Bootstrap, HTML, CSS, Firebase",
+    "preview_image": [
+      "../../../image/waybuck/home.png",
+      "../../../image/waybuck/login.png",
+      "../../../image/waybuck/addProduct.png",
+      "../../../image/waybuck/myCart.png",
+      "../../../image/waybuck/profile.png",
+      "../../../image/waybuck/register.png"
+    ]
+  },
+  {
+    "title": "Pizza Sales Web",
+    "description": " Pedro pizzeria is mock up website to sales pizza online",
+    "technology_used": " React Js, Bootstrap,HTML, CSS, Firebase",
+    "preview_image": [
+      "../../../image/pizza/pizza.png",
+      "../../../image/pizza/pizza2.png",
+      "../../../image/pizza/pizza3.png"
+    ]
+  },
+  {
+    "title": "Web Watching Movie.",
+    "description": "web movie films is mock up website to pick movies in web to look decription on movie",
+    "technology_used": "React Js, Bootstrap, html,css",
+    "preview_image": [
+      "../../../image/movie/homemovie.png",
+      "../../../image/movie/movie1.png",
+      "../../../image/movie/movie2.png"
+    ]
+  }
+]
