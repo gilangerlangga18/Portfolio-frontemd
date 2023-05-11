@@ -3,7 +3,7 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function MainBanner() {
@@ -97,70 +97,71 @@ function MainBanner() {
             sx={{
               paddingLeft: { xs: "none", md: "40px" },
               display: "flex",
-              gap: { xs: "10px", md: "2 0px" },
+              gap: { xs: "10px", md: "30px" },
               margin: { xs: " 20px 0  20px 0" },
             }}
           >
-            <GitHubIcon
+            <Box component="a" href="https://github.com/gilangerlangga18">
+              <GitHubIcon
+                sx={{
+                  border: "1px black solid",
+                  padding: { xs: "8px", md: "10px" },
+                  borderRadius: "50%",
+                  width: { xs: "20px", md: "25px" },
+                  height: { xs: "20px", md: "25px" },
+                  cursor: "pointer",
+                  color: "black",
+                }}
+              />
+            </Box>
+
+            <Box
               component="a"
-              href="https://github.com/gilangerlangga18"
-              sx={{
-                border: "1px black solid",
-                padding: { xs: "8px", md: "10px" },
-                borderRadius: "50%",
-                width: { xs: "20px", md: "25px" },
-                height: { xs: "20px", md: "25px" },
-                cursor: "pointer",
-              }}
-            />
-            <InstagramIcon
-              component="a"
-              href="https://www.instagram.com/gilangerlangga18/"
-              sx={{
-                border: "1px black solid",
-                padding: { xs: "8px", md: "10px" },
-                borderRadius: "50%",
-                width: { xs: "20px", md: "25px" },
-                height: { xs: "20px", md: "25px" },
-                cursor: "pointer",
-              }}
-            />
-            <LinkedInIcon
+              href="https://www.instagram.com/gilangerlangga18"
+            >
+              <InstagramIcon
+                sx={{
+                  border: "1px black solid",
+                  padding: { xs: "8px", md: "10px" },
+                  borderRadius: "50%",
+                  width: { xs: "20px", md: "25px" },
+                  height: { xs: "20px", md: "25px" },
+                  cursor: "pointer",
+                  color: "black",
+                }}
+              />
+            </Box>
+
+            <Box
               component="a"
               href="https://www.linkedin.com/in/gilang-erlangga-099aba239/"
-              sx={{
-                border: "1px black solid",
-                padding: { xs: "8px", md: "10px" },
-                borderRadius: "50%",
-                width: { xs: "20px", md: "25px" },
-                height: { xs: "20px", md: "25px" },
-                cursor: "pointer",
-              }}
-            />
-            <EmailIcon
-              component="a"
-              href="https://github.com/gilangerlangga18"
-              sx={{
-                border: "1px black solid",
-                padding: { xs: "8px", md: "10px" },
-                borderRadius: "50%",
-                width: { xs: "20px", md: "25px" },
-                height: { xs: "20px", md: "25px" },
-                cursor: "pointer",
-              }}
-            />
-            <WhatsAppIcon
-              component="a"
-              href="/gilang.erlangga1806@gmail.com"
-              sx={{
-                border: "1px black solid",
-                padding: { xs: "8px", md: "10px" },
-                borderRadius: "50%",
-                width: { xs: "20px", md: "25px" },
-                height: { xs: "20px", md: "25px" },
-                cursor: "pointer",
-              }}
-            />
+            >
+              <LinkedInIcon
+                sx={{
+                  border: "1px black solid",
+                  padding: { xs: "8px", md: "10px" },
+                  borderRadius: "50%",
+                  width: { xs: "20px", md: "25px" },
+                  height: { xs: "20px", md: "25px" },
+                  cursor: "pointer",
+                  color: "black",
+                }}
+              />
+            </Box>
+
+            <Box component="a" href="https://wa.me/082269788667">
+              <WhatsAppIcon
+                sx={{
+                  border: "1px black solid",
+                  padding: { xs: "8px", md: "10px" },
+                  borderRadius: "50%",
+                  width: { xs: "20px", md: "25px" },
+                  height: { xs: "20px", md: "25px" },
+                  cursor: "pointer",
+                  color: "black",
+                }}
+              />
+            </Box>
           </Box>
         </Box>
         <Box
