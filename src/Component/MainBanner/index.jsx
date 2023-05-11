@@ -95,9 +95,9 @@ function MainBanner() {
           </Box>
           <Box
             sx={{
-              paddingLeft: { xs: "none", md: "40px" },
+              paddingLeft: { xs: "none", md: "60px" },
               display: "flex",
-              gap: { xs: "10px", md: "30px" },
+              gap: { xs: "10px", md: "20px" },
               margin: { xs: " 20px 0  20px 0" },
             }}
           >
