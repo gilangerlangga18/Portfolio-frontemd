@@ -3,7 +3,7 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function MainBanner() {
@@ -152,6 +152,22 @@ function MainBanner() {
 
             <Button component="a" href="https://wa.me/082269788667">
               <WhatsAppIcon
+                sx={{
+                  border: "1px black solid",
+                  padding: { xs: "8px", md: "10px" },
+                  borderRadius: "50%",
+                  width: { xs: "20px", md: "25px" },
+                  height: { xs: "20px", md: "25px" },
+                  cursor: "pointer",
+                  color: "black",
+                }}
+              />
+            </Button>
+            <Button
+              LinkComponent="a"
+              href="mailto:gilang.erlangga1806@gmail.com"
+            >
+              <EmailIcon
                 sx={{
                   border: "1px black solid",
                   padding: { xs: "8px", md: "10px" },
