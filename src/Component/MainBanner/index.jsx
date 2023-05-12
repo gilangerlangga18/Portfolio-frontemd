@@ -64,14 +64,6 @@ function MainBanner() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "15px", md: "30px" },
-                fontWeight: "700",
-              }}
-            >
-              Frontend Developer
-            </Typography>
-            <Typography
-              sx={{
                 fontSize: { xs: "25px", md: "60px" },
                 fontWeight: "900",
               }}
@@ -79,6 +71,15 @@ function MainBanner() {
               {" "}
               Gilang Erlangga
             </Typography>
+            <Typography
+              sx={{
+                fontSize: { xs: "15px", md: "30px" },
+                fontWeight: "700",
+              }}
+            >
+              Frontend Developer
+            </Typography>
+
             <Typography
               sx={{
                 fontSize: { xs: "12px", md: "17px" },
@@ -98,7 +99,7 @@ function MainBanner() {
             sx={{
               paddingLeft: { xs: "none", md: "60px" },
               display: "flex",
-              gap: { xs: "10px", md: "20px" },
+              gap: { xs: "0px", md: "0px" },
               margin: { xs: " 20px 0  20px 0" },
             }}
           >
