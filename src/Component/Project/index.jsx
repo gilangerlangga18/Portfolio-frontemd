@@ -7,7 +7,7 @@ function Project() {
   console.log(Dummy);
 
   return (
-    <Box>
+    <Box id="project">
       <Box>
         <Typography
           sx={{

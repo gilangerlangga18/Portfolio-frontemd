@@ -12,7 +12,14 @@ function Footer() {
         height: { xs: "200px", md: "500px" },
       }}
     >
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <Typography
           sx={{
             fontSize: { xs: "10px", md: "20px" },

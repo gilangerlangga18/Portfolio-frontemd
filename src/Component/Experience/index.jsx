@@ -3,7 +3,7 @@ import React from "react";
 
 function Experience() {
   return (
-    <Box>
+    <Box id="experiences">
       <Typography
         sx={{
           fontSize: { xs: "30px", md: "60px" },

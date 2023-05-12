@@ -48,6 +48,7 @@ function StackFrontEnd() {
 
   return (
     <Box
+      id="stack"
       sx={{
         width: "100%",
         marginTop: "50px",

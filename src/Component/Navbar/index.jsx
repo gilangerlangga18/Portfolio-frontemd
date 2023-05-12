@@ -1,11 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
-// import { useNavigate } from "react-router-dom";
-
 function Navbar() {
-  // const navigate = useNavigate();
-
   return (
     <Box
       sx={{
@@ -41,20 +37,28 @@ function Navbar() {
         >
           {" "}
           <Typography
+            component="a"
+            href="#home"
             sx={{
               fontWeight: "800",
               fontSize: "22px",
               cursor: "pointer",
+              color: "unset",
+              textDecoration: "unset",
             }}
           >
             {" "}
             Home
           </Typography>
           <Typography
+            component="a"
+            href="#project"
             sx={{
               fontWeight: "800",
               fontSize: "22px",
               cursor: "pointer",
+              color: "unset",
+              textDecoration: "unset",
             }}
             // onClick={() => navigate("/")}
           >
@@ -62,24 +66,31 @@ function Navbar() {
             My Project
           </Typography>
           <Typography
+            component="a"
+            href="#experiences"
             sx={{
               fontWeight: "800",
               fontSize: "22px",
               cursor: "pointer",
+              color: "unset",
+              textDecoration: "unset",
             }}
-            // onClick={() => navigate("/project")}
           >
             Experience
           </Typography>
           <Typography
+            component="a"
+            href="#stack"
             sx={{
               fontWeight: "800",
               fontSize: "22px",
               cursor: "pointer",
+              color: "unset",
+              textDecoration: "unset",
             }}
             // onClick={() => navigate("/experience")}
           >
-            My Stuck
+            My Stack
           </Typography>
         </Box>
         <Box

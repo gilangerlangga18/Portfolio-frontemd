@@ -9,6 +9,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 function MainBanner() {
   return (
     <Box
+      id="home"
       sx={{
         marginTop: { xs: "50px", md: "160px" },
         display: "flex",
