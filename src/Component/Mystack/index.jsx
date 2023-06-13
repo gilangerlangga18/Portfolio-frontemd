@@ -64,8 +64,8 @@ function StackFrontEnd() {
       >
         My Stack __
       </Typography>
-      <Box
-        sx={{
+      <div
+        style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -88,39 +88,67 @@ function StackFrontEnd() {
             {state.map((item) => (
               <Box
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: { xs: "120px", md: "350px" },
-                  height: { xs: "90px", md: "125px" },
-                  backgroundColor: "white",
+                  position: "relative",
+                  overflow: "hidden",
                   borderRadius: "20px",
                 }}
               >
-                <Box>
-                  <Box
-                    component="img"
-                    src={item.img}
-                    sx={{
-                      // width: "70px",
-                      height: { xs: "30px", md: "50px" },
-                    }}
-                  />
-                </Box>
-                <Typography
+                <Box
                   sx={{
-                    fontSize: { xs: "15px", md: "30px" },
-                    fontWeight: "700",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: { xs: "120px", md: "350px" },
+                    height: { xs: "90px", md: "125px" },
+                    backgroundColor: "white",
+                    borderRadius: "20px",
+                    cursor: "pointer",
+                    overflow: "hidden",
+                    "&:hover:before": {
+                      opacity: "0.4",
+                      height: "100%",
+                      transition: "all 0.5s",
+                    },
+                    "&::before": {
+                      content: '""',
+                      backgroundImage: 'url("../../../image/background1.jpg")',
+                      position: "absolute",
+                      backgroundSize: "contain",
+                      overflow: "hidden",
+                      top: "0",
+                      right: "0",
+                      left: "0",
+                      bottom: "0",
+                      opacity: "0",
+                    },
                   }}
                 >
-                  {item.name}
-                </Typography>
+                  <Box>
+                    <Box
+                      component="img"
+                      src={item.img}
+                      sx={{
+                        // width: "70px",
+                        height: { xs: "30px", md: "50px" },
+                        backgroundColor: "#EABCAC",
+                      }}
+                    />
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "15px", md: "30px" },
+                      fontWeight: "700",
+                    }}
+                  >
+                    {item.name}
+                  </Typography>
+                </Box>
               </Box>
             ))}
           </Box>
         </Box>
-      </Box>
+      </div>
     </Box>
   );
 }

@@ -1,11 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useScrollTrigger } from "@mui/material";
 import React from "react";
 import BoxCarousel from "../Carousel";
 import Dummy from "../../DummyData/DataProject.json";
 
 function Project() {
-  console.log(Dummy);
-
   return (
     <Box id="project">
       <Box>
@@ -23,7 +21,7 @@ function Project() {
           sx={{
             width: "100%",
             display: "flex",
-            justifyContent: { xs: "center", md: "none", lg: "none" },
+            justifyContent: { xs: "center", md: "center", lg: "none" },
             flexDirection: "column",
             alignItems: { xs: "center", md: "none", lg: "none" },
             gap: "40px",

@@ -7,6 +7,29 @@ import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function MainBanner() {
+  const icon = [
+    {
+      link: "https://github.com/gilangerlangga18",
+      icon: GitHubIcon,
+    },
+    {
+      link: "https://www.instagram.com/gilangerlangga18",
+      icon: InstagramIcon,
+    },
+    {
+      link: "https://www.linkedin.com/in/gilang-erlangga-099aba239/",
+      icon: LinkedInIcon,
+    },
+    {
+      link: "https://wa.me/082269788667",
+      icon: WhatsAppIcon,
+    },
+    {
+      link: "mailto:gilang.erlangga1806@gmail.com",
+      icon: EmailIcon,
+    },
+  ];
+
   return (
     <Box
       id="home"
@@ -21,9 +44,7 @@ function MainBanner() {
           width: { xs: "90%", md: "80%" },
           display: "flex",
           height: { xs: "700px", md: "800px" },
-          backgroundColor: "#FF9A3C",
-          // alignItems: "center",
-          // justifyContent: "space-between",
+          backgroundColor: "#E2B091",
           borderRadius: "40px",
           flexDirection: { xs: "column", md: "row" },
         }}
@@ -34,11 +55,9 @@ function MainBanner() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-around",
-            backgroundColor: "#FF6F3C",
-            // marginLeft: "50px",
+            backgroundColor: "#EABCAC",
             borderRadius: { xs: "40px 40px 0 0", md: "40px 0 0 40px" },
             alignItems: { xs: "center", md: "start" },
-            // height: { xs: "40%", md: "none" },
           }}
         >
           <Box
@@ -57,7 +76,6 @@ function MainBanner() {
               display: "flex",
               flexDirection: "column",
               gap: { xs: "10px", md: "20px" },
-              // alignSelf: "center",
               alignItems: { xs: "center", md: "start" },
               paddingLeft: { xs: "0", md: "50px" },
             }}
@@ -103,83 +121,27 @@ function MainBanner() {
               margin: { xs: " 20px 0  20px 0" },
             }}
           >
-            <Button component="a" href="https://github.com/gilangerlangga18">
-              <GitHubIcon
-                sx={{
-                  border: "1px black solid",
-                  padding: { xs: "8px", md: "10px" },
-                  borderRadius: "50%",
-                  width: { xs: "20px", md: "25px" },
-                  height: { xs: "20px", md: "25px" },
-                  cursor: "pointer",
-                  color: "black",
-                }}
-              />
-            </Button>
-
-            <Button
-              component="a"
-              href="https://www.instagram.com/gilangerlangga18"
-            >
-              <InstagramIcon
-                sx={{
-                  border: "1px black solid",
-                  padding: { xs: "8px", md: "10px" },
-                  borderRadius: "50%",
-                  width: { xs: "20px", md: "25px" },
-                  height: { xs: "20px", md: "25px" },
-                  cursor: "pointer",
-                  color: "black",
-                }}
-              />
-            </Button>
-
-            <Button
-              component="a"
-              href="https://www.linkedin.com/in/gilang-erlangga-099aba239/"
-            >
-              <LinkedInIcon
-                sx={{
-                  border: "1px black solid",
-                  padding: { xs: "8px", md: "10px" },
-                  borderRadius: "50%",
-                  width: { xs: "20px", md: "25px" },
-                  height: { xs: "20px", md: "25px" },
-                  cursor: "pointer",
-                  color: "black",
-                }}
-              />
-            </Button>
-
-            <Button component="a" href="https://wa.me/082269788667">
-              <WhatsAppIcon
-                sx={{
-                  border: "1px black solid",
-                  padding: { xs: "8px", md: "10px" },
-                  borderRadius: "50%",
-                  width: { xs: "20px", md: "25px" },
-                  height: { xs: "20px", md: "25px" },
-                  cursor: "pointer",
-                  color: "black",
-                }}
-              />
-            </Button>
-            <Button
-              LinkComponent="a"
-              href="mailto:gilang.erlangga1806@gmail.com"
-            >
-              <EmailIcon
-                sx={{
-                  border: "1px black solid",
-                  padding: { xs: "8px", md: "10px" },
-                  borderRadius: "50%",
-                  width: { xs: "20px", md: "25px" },
-                  height: { xs: "20px", md: "25px" },
-                  cursor: "pointer",
-                  color: "black",
-                }}
-              />
-            </Button>
+            {icon.map((item) => (
+              <Button component="a" href={item.link}>
+                <item.icon
+                  sx={{
+                    border: "1px #32485c solid",
+                    padding: { xs: "8px", md: "10px" },
+                    borderRadius: "50%",
+                    width: { xs: "20px", md: "25px" },
+                    height: { xs: "20px", md: "25px" },
+                    cursor: "pointer",
+                    color: "#32485c",
+                    "&:hover": {
+                      transition: "all 0.5s",
+                      backgroundColor: "#874e4c",
+                      color: "#EABCAC",
+                      border: "1px #EABCAC solid",
+                    },
+                  }}
+                />
+              </Button>
+            ))}
           </Box>
         </Box>
         <Box
@@ -187,18 +149,13 @@ function MainBanner() {
             width: { xs: "none", md: "50%" },
             display: "flex",
             justifyContent: "center",
-            // alignItems: "end",
           }}
         >
           <Box
             sx={{
-              // width: "400px",
               height: { xs: "70%", md: "100%" },
-              // backgroundColor: "red",
               display: "flex",
-              // justifyContent: "center",
               alignItems: "end",
-              // objectFit: "cover",
               marginBottom: { xs: "50px", md: "none" },
             }}
           >

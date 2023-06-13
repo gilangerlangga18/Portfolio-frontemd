@@ -2,6 +2,25 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
 function Navbar() {
+  const page = [
+    {
+      linl: "#home",
+      title: "Home",
+    },
+    {
+      linl: "#project",
+      title: "My Project",
+    },
+    {
+      linl: "#experiences",
+      title: "Experience",
+    },
+    {
+      linl: "#stack",
+      title: "My Stack",
+    },
+  ];
+
   return (
     <Box
       sx={{
@@ -23,7 +42,7 @@ function Navbar() {
           width: { xs: "180px", md: "90%" },
           justifyContent: "space-between",
           alignItems: "center",
-          backgroundColor: "#FFC93C",
+          backgroundColor: "#E2B091",
           borderRadius: "20px",
         }}
       >
@@ -35,63 +54,26 @@ function Navbar() {
             color: "white",
           }}
         >
-          {" "}
-          <Typography
-            component="a"
-            href="#home"
-            sx={{
-              fontWeight: "800",
-              fontSize: "22px",
-              cursor: "pointer",
-              color: "unset",
-              textDecoration: "unset",
-            }}
-          >
-            {" "}
-            Home
-          </Typography>
-          <Typography
-            component="a"
-            href="#project"
-            sx={{
-              fontWeight: "800",
-              fontSize: "22px",
-              cursor: "pointer",
-              color: "unset",
-              textDecoration: "unset",
-            }}
-            // onClick={() => navigate("/")}
-          >
-            {" "}
-            My Project
-          </Typography>
-          <Typography
-            component="a"
-            href="#experiences"
-            sx={{
-              fontWeight: "800",
-              fontSize: "22px",
-              cursor: "pointer",
-              color: "unset",
-              textDecoration: "unset",
-            }}
-          >
-            Experience
-          </Typography>
-          <Typography
-            component="a"
-            href="#stack"
-            sx={{
-              fontWeight: "800",
-              fontSize: "22px",
-              cursor: "pointer",
-              color: "unset",
-              textDecoration: "unset",
-            }}
-            // onClick={() => navigate("/experience")}
-          >
-            My Stack
-          </Typography>
+          {page.map((item) => (
+            <Typography
+              component="a"
+              href={item.linl}
+              sx={{
+                fontWeight: "800",
+                fontSize: "22px",
+                cursor: "pointer",
+                color: "unset",
+                textDecoration: "unset",
+                "&:hover": {
+                  color: "#874e4c",
+                  transition: "all 0.5s",
+                },
+              }}
+            >
+              {" "}
+              {item.title}
+            </Typography>
+          ))}{" "}
         </Box>
         <Box
           sx={{
@@ -113,6 +95,10 @@ function Navbar() {
               color: "white",
               marginRight: { xs: "0", md: "30px" },
               cursor: "pointer",
+              "&:hover": {
+                color: "#874e4c",
+                transition: "all 0.5s",
+              },
             }}
             // onClick={() => navigate("/stack")}
           >

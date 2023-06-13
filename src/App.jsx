@@ -10,7 +10,11 @@ import Footer from "./Component/Footer";
 function App() {
   return (
     <Box>
-      <Box>
+      <Box
+        sx={{
+          overflow: "hidden",
+        }}
+      >
         {" "}
         <Navbar />
         <MainBanner />

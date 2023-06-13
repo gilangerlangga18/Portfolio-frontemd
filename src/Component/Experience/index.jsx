@@ -3,7 +3,7 @@ import React from "react";
 
 function Experience() {
   return (
-    <Box id="experiences">
+    <div id="experiences">
       <Typography
         sx={{
           fontSize: { xs: "30px", md: "60px" },
@@ -15,123 +15,131 @@ function Experience() {
       >
         My Experience __
       </Typography>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "50px",
-        }}
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-offset="200"
+        data-aos-delay="500"
       >
         <Box
           sx={{
-            width: "80%",
-            // height: "400px",
-            border: "1px #e2e8f0 solid",
-            // backgroundColor: "white",
-            borderRadius: "30px",
+            width: "100%",
             display: "flex",
-            // alignItems: "center",
-            justifyContent: "start",
-            color: "#e2e8f0",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "50px",
           }}
         >
           <Box
             sx={{
+              width: "80%",
+              // height: "400px",
+              border: "1px #e2e8f0 solid",
+              // backgroundColor: "white",
+              borderRadius: "30px",
               display: "flex",
-              margin: "30px",
-              flexDirection: "column",
-              justifyContent: "space-around",
-              gap: { xs: "10px", md: "30px" },
+              // alignItems: "center",
+              justifyContent: "start",
+              color: "#e2e8f0",
             }}
           >
-            <Typography
+            <Box
               sx={{
-                fontSize: { xs: "20px", md: "40px" },
-                fontWeight: "800",
+                display: "flex",
+                margin: "30px",
+                flexDirection: "column",
+                justifyContent: "space-around",
+                gap: { xs: "10px", md: "30px" },
               }}
             >
-              Frontend Developer
-            </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "20px", md: "40px" },
+                  fontWeight: "800",
+                }}
+              >
+                Frontend Developer
+              </Typography>
 
-            <Box
-              sx={{
-                display: "flex",
-                gap: "10px",
-              }}
-            >
-              <Typography
+              <Box
                 sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "800",
+                  display: "flex",
+                  gap: "10px",
                 }}
               >
-                EXP Tech
-              </Typography>
-              <Typography
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "800",
+                  }}
+                >
+                  EXP Tech
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "500",
+                  }}
+                >
+                  | Januari 2023 - Maret
+                </Typography>
+              </Box>
+              <Box
                 sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "500",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "20px",
                 }}
               >
-                | Januari 2023 - Maret
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-              }}
-            >
-              <Typography
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "800",
+                  }}
+                >
+                  Technology Used
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "500",
+                  }}
+                >
+                  {" "}
+                  Next Js, React Js, Material UI, FireBase, Firestore, Cloud
+                  Storage
+                </Typography>
+              </Box>
+              <Box
                 sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "800",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "20px",
                 }}
               >
-                Technology Used
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "500",
-                }}
-              >
-                {" "}
-                Next Js, React Js, Material UI, FireBase, Firestore, Cloud
-                Storage
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-              }}
-            >
-              <Typography
-                sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "800",
-                }}
-              >
-                Project
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: { xs: "12px", md: "20px" },
-                  fontWeight: "500",
-                }}
-              >
-                Built and maintained web application
-              </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "800",
+                  }}
+                >
+                  Project
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "20px" },
+                    fontWeight: "500",
+                  }}
+                >
+                  Built and maintained web application
+                </Typography>
+              </Box>
             </Box>
           </Box>
         </Box>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
 

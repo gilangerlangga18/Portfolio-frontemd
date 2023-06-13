@@ -11,7 +11,11 @@
       "../../../image/todo/NewActivity1.png",
       "../../../image/todo/TambahNewActivity.png",
       "../../../image/todo/ActivityTodo.png"
-    ]
+    ],
+    "slide": "fade-left",
+    "direction": "row",
+    "justify": "start",
+    "justifyxs": "end"
   },
   {
     "title": "GG Coffe & Resto.",
@@ -24,7 +28,11 @@
       "../../../image/waybuck/myCart.png",
       "../../../image/waybuck/profile.png",
       "../../../image/waybuck/register.png"
-    ]
+    ],
+    "slide": "fade-right",
+    "direction": "row-reverse",
+    "justify": "end",
+    "justifyxs": "start"
   },
   {
     "title": "Pizza Sales Web",
@@ -34,7 +42,11 @@
       "../../../image/pizza/pizza.png",
       "../../../image/pizza/pizza2.png",
       "../../../image/pizza/pizza3.png"
-    ]
+    ],
+    "slide": "fade-left",
+    "direction": "row",
+    "justify": "start",
+    "justifyxs": "end"
   },
   {
     "title": "Web Watching Movie.",
@@ -44,6 +56,10 @@
       "../../../image/movie/homemovie.png",
       "../../../image/movie/movie1.png",
       "../../../image/movie/movie2.png"
-    ]
+    ],
+    "slide": "fade-right",
+    "direction": "row-reverse",
+    "justify": "end",
+    "justifyxs": "start"
   }
 ]
