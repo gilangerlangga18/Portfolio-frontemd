@@ -1,4 +1,4 @@
-import { Box, Typography, useScrollTrigger } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import BoxCarousel from "../Carousel";
 import Dummy from "../../DummyData/DataProject.json";
